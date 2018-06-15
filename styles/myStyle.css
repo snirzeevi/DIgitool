@@ -1,6 +1,7 @@
 body {
     direction: rtl;
     font-family: 'Heebo', sans-serif;
+    font-size:18px;
 }
 
 #container {
@@ -31,7 +32,6 @@ h4{
 }
 
 p {
-    font-size: 18px;
     line-height: 1.6;
     max-width: 720px;
 }
