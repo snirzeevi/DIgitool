@@ -206,6 +206,7 @@ nav#mainNav {
 
 #breadCrumbs ul li {
     display: inline-block;
+    font-size:16px;
 }
 
 #breadCrumbs ul li a {
@@ -699,7 +700,7 @@ footer nav #current {
     display: inline-block;
     margin-right: 7px;
     max-height: 32px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .phraseIcon img {
@@ -710,6 +711,14 @@ footer nav #current {
 #fbLike > img {
     margin-top: -12px;
     margin-bottom: 5px;
+}
+
+i.fab.fa-facebook-messenger {
+    color: #009FFF;
+}
+
+#inLike .phraseIcon {
+    color: #C84E52;
 }
 
 #inStory .phraseIcon img {
@@ -917,7 +926,7 @@ div#fb-3rd_dialog {
     bottom: 18px;
 }
 
-#yt-4th_dialog {
+.dialog #yt-4th_dialog {
     margin-top: -30px;
 }
 
@@ -925,7 +934,7 @@ div#fb-3rd_dialog {
     margin-right:160px;
 }
 
-#yt-6th_dialog p.right {
+.dialog #yt-6th_dialog p.right {
     max-width: 360px;
 }
 
@@ -935,6 +944,23 @@ div#fb-3rd_dialog {
 
 .dialog #yt-9th_dialog p {
     margin-top: 10px;
+}
+
+.dialog #wa-4th_dialog p {
+    margin-right: 85px;
+}
+
+.dialog #wa-5th_dialog p {
+    margin-right: 130px;
+}
+
+.dialog #wa-6th_dialog p {
+    margin-top: 15px;
+}
+
+.dialog #wa-8th_dialog p {
+    margin-top: 80px;
+    margin-right: 80px;
 }
 
 
@@ -984,9 +1010,12 @@ div#fb-3rd_dialog {
 /*****siteMap*****/
 
 ul#siteMap > li {
-    margin: 0 12px;
+    margin: 0 14px;
 }
 
 ul#siteMap li ul > li {
-    width:80px;
+}
+
+ul#siteMap a {
+    font-size: 16px;
 }
