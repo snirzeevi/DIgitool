@@ -96,6 +96,7 @@ a:focus {
     background-image: -moz-linear-gradient( 0deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     background-image: -o-linear-gradient( 0deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     height: 470px;
     z-index: 0;
 }
@@ -127,16 +128,20 @@ a:focus {
     z-index: 2;
 }
 
+#logo {
+    display:inline-block;
+}
+
 #logo img {
     margin-top: 17px;
     width: 162px;
-    height: auto;
+    height: 61px;
 }
 
 #logo h1 img {
     margin-top: 2px;
     width: 162px;
-    height: auto;
+    height: 61px;
 }
 
 /*****mainNavigation*****/
@@ -161,6 +166,7 @@ a:focus {
     background-image: -moz-linear-gradient( 90deg, rgb(33,104,204) 0%, rgb(33,153,204) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(33,104,204) 0%, rgb(33,153,204) 100%);
     background-image: -o-linear-gradient( 90deg, rgb(33,104,204) 0%, rgb(33,153,204) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(33,104,204) 0%, rgb(33,153,204) 100%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
     min-width: 124px;
     text-align: center;
@@ -180,6 +186,7 @@ a:focus {
     background-image: -moz-linear-gradient( 90deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     background-image: -o-linear-gradient( 90deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     box-shadow: inset 0px 0px 11px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -187,6 +194,7 @@ a:focus {
     background-image: -moz-linear-gradient( 270deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     background-image: -webkit-linear-gradient( 270deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     background-image: -o-linear-gradient( 270deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
+    background-image: -ms-linear-gradient( 270deg, rgb(101,135,154) 0%, rgb(36,61,92) 100%);
     box-shadow: inset 0px 0px 11px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -196,12 +204,13 @@ a:focus {
 
 nav#mainNav {
     z-index: 3;
+    display: inline;
 }
 
 /*****bredCrumbs*****/
 
 #breadCrumbs ul {
-    padding: 0;
+    padding: 15px   ;
 }
 
 #breadCrumbs ul li {
@@ -227,7 +236,7 @@ nav#mainNav {
 
 
 /*****HomePage Slider*****/
-#header .row h1.col-5 {
+#header h1 {
     margin-right: 6.33%;
     z-index: 3;
 }
@@ -238,7 +247,7 @@ nav#mainNav {
 }
 
 a.carousel-control-next, a.carousel-control-prev {
-    z-index: 4;
+    z-index: 5;
     opacity: 1;
     top: 100px;
     height: 30px;
@@ -290,8 +299,8 @@ span.carousel-control-next-icon {
 
 ol.carousel-indicators {
     position: relative;
-    top: 6px;
-    right: 375px;
+    bottom: 270px;
+    right: 347px;
 }
 
 .carousel-inner {
@@ -329,7 +338,7 @@ ol.carousel-indicators {
 }
 
 .carousel-item > p {
-    width: 480px;
+    width: 460px;
     margin-right: 15px;
 }
 
@@ -340,6 +349,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     background-image: -o-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
     color: #141517;
     font-size: 18px;
@@ -360,6 +370,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -o-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
     color: #fff;
 }
@@ -391,14 +402,12 @@ ol.carousel-indicators {
     z-index: 5;
     position: relative;
     bottom: 274px;
-    right: 593px;
+    right: 565px;
 }
 
 #sliderImg img {
     height: 278px;
 }
-
-
 
 /*****HomePage*****/
 
@@ -421,15 +430,16 @@ ol.carousel-indicators {
     font-weight: 500;
 }
 
+#homepage #mainContent h3 {
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 5;
+}
+
 #homepage h4 {
     font-size: 25px;
     font-weight: 500;
-}
-
-
-#homepage #container .row h3.col-12 {
-    text-align: center;
-    margin-top: 60px;
 }
 
 
@@ -438,6 +448,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -o-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     display: block;
     height: 3px;
     width: 100px;
@@ -457,6 +468,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     background-image: -o-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(255,167,95) 0%, rgb(251,117,95) 100%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
     color: #141517;
     font-size: 18px;
@@ -479,6 +491,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -o-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
     color: #fff;
 }
@@ -487,6 +500,7 @@ ol.carousel-indicators {
     background-image: -moz-linear-gradient( 90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     background-image: -o-linear-gradient( 90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(186,43,50) 0%, rgb(255,140,73) 100%);
     box-shadow: inset 0px 0px 11px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -568,6 +582,7 @@ footer nav ul:before {
     background-image: -moz-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -o-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     height: 3px;
     display: block;
     margin-bottom: 20px;
@@ -604,6 +619,7 @@ footer nav #current {
     background-image: -moz-linear-gradient( -90deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     background-image: -o-linear-gradient( -90deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(201,234,253) 0%, rgb(255,255,255) 100%);
     height: 250px;
     z-index: 0;
 }
@@ -623,6 +639,7 @@ footer nav #current {
     height: 100%;
     max-width: 240px;
     margin-left: 7px;
+    position:sticky;
 }
 
 #phraseNav h3 {
@@ -685,7 +702,7 @@ footer nav #current {
 }
 
 .whatsapp #pageIntro #intoText img {
-    margin: 74px auto;
+    margin: 88px auto;
 }
 
 #phrasesList {
@@ -746,6 +763,7 @@ p.dontHave {
     background-image: -moz-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     background-image: -o-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(41,129,255) 0%, rgb(41,192,255) 100%);
     display: block;
     height: 3px;
     width: 100px;
@@ -815,6 +833,7 @@ p.dontHave {
 
 .dialog .character-right {
     float: right;
+    display:inline-block;
 }
 
 .dialog img.kid {
@@ -836,7 +855,6 @@ p.dontHave {
 }
 
 .dialog p.right {
-    margin-right: 30px;
     margin-top: 60px;
 }
 
@@ -881,21 +899,56 @@ div#fb-2nd_dialog {
     margin-bottom: 5px;
 }
 
+#fb-2nd_dialog p {
+    margin-right: 130px;
+}
+
 div#fb-3rd_dialog {
-    display:block;
+    display: block;
+}
+
+div#fb-3rd_dialog p {
+    max-width: 320px;
 }
 
 #fb-4th_dialog p.left {
     margin-right: 12%;
 }
 
+#fb-6th_dialog p {
+    margin-right: 100px;
+}
+
+#fb-8th_dialog p.right.col-6 {
+    width: 400px;
+    margin-right: -160px;
+}
+
+.dialog #fb-10th_dialog {
+    margin-top:40px;
+}
+
+
+.dialog #fb-10th_dialog p.left {
+    margin-right: 60px;
+    margin-top: 20px;
+    max-width: 348px;
+}
+
+
 .dialog #fb-10th_dialog p.left:after {
     bottom: 50px;
 }
 
 .dialog #in-2nd_dialog p.left {
-    margin-right: 200px;
+    margin-right: 120px;
     margin-top: 20px;
+}
+
+.dialog #in-3rd_dialog p {
+    margin-right: 10px;
+    margin-top: 30px;
+    width: 340px;
 }
 
 .dialog #in-4th_dialog {
@@ -903,8 +956,43 @@ div#fb-3rd_dialog {
 }
 
 .dialog #in-4th_dialog p.left {
-    margin-right: 180px;
-    margin-top: 70px;
+    margin-right: 100px;
+    margin-top: 90px;
+}
+
+.dialog #in-5th_dialog p {
+    margin-right: 80px;
+    margin-top: 90px;
+    max-width: 300px;
+}
+
+.dialog #in-7th_dialog p {
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.dialog #in-8th_dialog p {
+    margin-right: 10px;
+    margin-top: 80px;
+    max-width: 330px;
+}
+
+.dialog #in-9th_dialog p {
+    margin-right: 0;
+    margin-top: 60px;
+    max-width: 330px;
+}
+
+.dialog #in-10th_dialog p {
+    margin-right: 0;
+    margin-top: 60px;
+    max-width: 330px;
+}
+
+.dialog #in-11th_dialog p {
+    margin-right: 0;
+    margin-top: 60px;
+    max-width: 330px;
 }
 
 .dialog #yt-3rd_dialog p {
@@ -931,11 +1019,11 @@ div#fb-3rd_dialog {
 }
 
 .youtube .dialog p.left {
-    margin-right:160px;
+    margin-right:130px;
 }
 
 .dialog #yt-6th_dialog p.right {
-    max-width: 360px;
+    max-width: 335px;
 }
 
 .dialog #yt-7th_dialog p {
@@ -946,8 +1034,24 @@ div#fb-3rd_dialog {
     margin-top: 10px;
 }
 
+.dialog #yt-10th_dialog p {
+    max-width:340px;
+}
+
+.dialog #wa-2nd_dialog p {
+    margin-right: 25px;
+    margin-top: 80px;
+    max-width: 250px;
+}
+
+.dialog #wa-3rd_dialog p {
+    margin-right: 10px;
+    max-width: 290px;
+}
+
 .dialog #wa-4th_dialog p {
-    margin-right: 85px;
+    margin-top: 70px;
+    max-width: 300px;
 }
 
 .dialog #wa-5th_dialog p {
@@ -959,8 +1063,8 @@ div#fb-3rd_dialog {
 }
 
 .dialog #wa-8th_dialog p {
-    margin-top: 80px;
-    margin-right: 80px;
+    margin-top: 20px;
+    margin-right: 120px;
 }
 
 
