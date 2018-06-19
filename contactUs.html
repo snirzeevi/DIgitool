@@ -23,6 +23,7 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
 
+
 </head>
 <body class="innerPage contact">
     <div id="innerBG"></div>
@@ -60,10 +61,9 @@
 .</p>
             <div class="row">
                 <form class="col-9" name="form">
-                    <input type="hidden" id="myEmail" name="form" value="snir@live.com">
-                        <legend>
-                            פרטים אישיים
-                        </legend>
+                    <input type="hidden" id="myEmail" name="form" value="snir120@gmail.com">
+                    <fieldset>
+                        <legend>פרטים אישיים</legend>
                         <label for="FullName">
                             שם מלא:
                             <input type="text" placeholder="הזן/י את שמך..." id="FullName" />
@@ -76,9 +76,9 @@
                             טלפון:
                             <input type="text" placeholder="הזן/י מספר טלפון..." id="phoneNumber" />
                         </label>
-                        <legend>
-                            מהי סיבת ביקורך באתר?
-                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>מהי סיבת ביקורך באתר?</legend>
                         <label for="reason1">
                             <input type="radio" id="reason1" name="reason" checked /> רציתי ללמוד את השפה הדיגיטלית
                         </label>
@@ -88,11 +88,13 @@
                         <label for="reason3">
                             <input type="radio" id="reason3" name="reason" /> אחר
                         </label>
+                    </fieldset>
                     <label for="message" id="message">
                         <textarea id="massage" placeholder="הזן/י את תוכן ההודעה"></textarea>
                     </label>
                     <br />
-                    <input type="submit" id="SendForm" value="שלח" name="send" />
+                    <input type="submit" id="SendForm" value="שלח" name="form" />
+                    <div id="feedback"><div id="ajaxLoaderDiv" style="display:none;"><img src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/images/ajaxLoader.gif" alt="ajaxLoader"></div></div>   
                 </form>
                 <div class="col-3">
                     <img src="images/dialogs/fb/Dialog1_01.svg" alt="" />

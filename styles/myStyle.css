@@ -813,6 +813,19 @@ p.dontHave {
     background-image: url('../images/snir.jpg');
 }
 
+#logoHit {
+    text-align:center;
+    margin-top:60px;
+}
+
+
+#logoHit img {
+    max-width: 220px;
+    display:block;
+    margin:0 auto;
+
+}
+
 
 /*****dialogs*****/
 
@@ -1110,9 +1123,12 @@ div#fb-3rd_dialog p {
     bottom: -51px;
 }
 
+.contact form #feedback {
+color: #121212;
+}
+
 
 /*****siteMap*****/
-
 ul#siteMap > li {
     margin: 0 14px;
 }
