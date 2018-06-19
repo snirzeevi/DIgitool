@@ -25,10 +25,12 @@
 </head>
 <body class="innerPage contact">
     <div id="innerBG"></div>
-    <ul id="skip" class="hidden-xs hidden-sm">
-        <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
-        <li><a title="דלג לתפריט" href="#mainNav">דלג לתפריט</a></li>
-    </ul>
+    <nav>
+        <ul id="skip" class="hidden-xs hidden-sm">
+            <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
+            <li><a title="דלג לתפריט" href="#mainNav">דלג לתפריט</a></li>
+        </ul>
+    </nav>
     <div id="container">
         <header id="innerHeader">
                 <div id="logo" class="col-2">
@@ -56,41 +58,44 @@
 בשביל כל פניה או בקשה אנחנו כאן
 .</p>
             <div class="row">
-                <form class="col-9">
-                    <input type="hidden" id="myEmail" name="name" value="daniel.ilan222@gmail.com">
-                    <legend>
-                        פרטים אישיים
-                    </legend>
-                    <label for="FullName">
-                        שם מלא:
-                        <input type="text" placeholder="הזן/י את שמך..." id="FullName"  />
-                    </label>
-                    <label for="email">
-                        אימייל:
-                        <input type="text" placeholder="הזן/י אימייל תקין..." id="email" />
-                    </label>
-                    <label for="phoneNumber">
-                        טלפון:
-                        <input type="text" placeholder="הזן/י מספר טלפון..." id="phoneNumber" />
-                    </label>
-                    <legend>
-                        מהי סיבת ביקורך באתר?
-                    </legend>
-                    <label for="reason1">
-                        <input type="radio" id="reason1" name="reason" checked /> רציתי ללמוד את השפה הדיגיטלית
-                    </label>
-                    <label for="reason2">
-                        <input type="radio" id="reason2" name="reason" /> איתור מידע ותוכן למטרות לימודיות
-                    </label>
-                    <label for="reason3">
-                        <input type="radio" id="reason3" name="reason" /> אחר
-                    </label>
-
+                <form class="col-9" name="form">
+                    <input type="hidden" id="myEmail" name="form" value="daniel.ilan222@gmail.com">
+                    <fieldset>
+                        <legend>
+                            פרטים אישיים
+                        </legend>
+                        <label for="FullName">
+                            שם מלא:
+                            <input type="text" placeholder="הזן/י את שמך..." id="FullName" />
+                        </label>
+                        <label for="email">
+                            אימייל:
+                            <input type="text" placeholder="הזן/י אימייל תקין..." id="email" />
+                        </label>
+                        <label for="phoneNumber">
+                            טלפון:
+                            <input type="text" placeholder="הזן/י מספר טלפון..." id="phoneNumber" />
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            מהי סיבת ביקורך באתר?
+                        </legend>
+                        <label for="reason1">
+                            <input type="radio" id="reason1" name="reason" checked /> רציתי ללמוד את השפה הדיגיטלית
+                        </label>
+                        <label for="reason2">
+                            <input type="radio" id="reason2" name="reason" /> איתור מידע ותוכן למטרות לימודיות
+                        </label>
+                        <label for="reason3">
+                            <input type="radio" id="reason3" name="reason" /> אחר
+                        </label>
+                    </fieldset>
                     <label for="message" id="message">
                         <textarea id="massage" placeholder="הזן/י את תוכן ההודעה"></textarea>
                     </label>
                     <br />
-                    <input type="submit" id="SendForm" value="שלח" />
+                    <input type="submit" id="SendForm" value="שלח" name="form" />
                 </form>
                 <div class="col-3">
                     <img src="images/dialogs/fb/Dialog1_01.svg" alt="" />

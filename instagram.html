@@ -30,11 +30,13 @@
 </head>
 <body class="innerPage instagram" data-spy="scroll" data-target="#phraseNav" data-offset="220">
     <div id="innerBG"></div>
-    <ul id="skip" class="hidden-xs hidden-sm">
-        <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
-        <li><a title="דלג לתפריט ראשי" href="#mainNav">דלג לתפריט</a></li>
-        <li><a title="דלג לתפריט המושגים" href="#phraseNav">דלג לתפריט המושגים</a></li>
-    </ul>
+    <nav>
+        <ul id="skip" class="hidden-xs hidden-sm">
+            <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
+            <li><a title="דלג לתפריט ראשי" href="#mainNav">דלג לתפריט</a></li>
+            <li><a title="דלג לתפריט המושגים" href="#phraseNav">דלג לתפריט המושגים</a></li>
+        </ul>
+    </nav>
     <div id="container">
         <header id="innerHeader">
                 <div id="logo" class="col-2">
@@ -87,7 +89,7 @@
                         <li class="nav-item"><a href="#inTag" class="nav-link">תיוג</a></li>
                     </ul>
                 </nav>
-                <div class="col-9 phrasesList">
+                <div class="col-9 phrasesList" role="main">
                     <h2>מילון המונחים של אינסטגרם</h2>
                     <div class="dialog col-12">
                         <div id="in-1st_dialog" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -111,7 +113,7 @@
                     </div><!--שיחה 1-->
                     <section class="phraseBox" id="inStory">
                         <h4>סטורי (Story)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_story.png" alt="" /><p>(עיגול צבעוני סביב תמונת המשתמש) </p></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_story.png"/><p>(עיגול צבעוני סביב תמונת המשתמש) </p></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>בתרגום לעברית, סטורי הוא סיפור. לתוכו מעלה המשתמש תמונות או וידאו המופיעים בחשבון האינסטגרם האישי שלו וניתנים לצפייה ל-24 שעות ולאחר מכן נעלמים.
                         </p>
@@ -119,7 +121,7 @@
 
                     <section class="phraseBox" id="inProfile">
                         <h4>פרופיל (Profile) </h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-user"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-user" aria-label="אייקון של אדם"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> אזור הפרופיל הוא האלבום האישי של המשתמש, העמוד בו מופיע כל התוכן שהוא העלה לאינסטגרם בצורה מרוכזת.<br />
                             התמונות והוידאו שהעלה מסודרים ברצף כרונולוגי(חדש למעלה-ישן למטה), מופיעים בעמוד זה גם מספר המשתמשים שעוקבים אחריו ומספר המשתמשים אחריהם הוא עוקב.
@@ -129,7 +131,7 @@
 
                     <section class="phraseBox beforeDialog" id="inHashtag">
                         <h4>האשטאג (Hashtag)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-hashtag"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-hashtag" aria-label="סולמית"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> האשטאג זוהי מילה או ביטוי, הקשור לתוכן החזותי שפורסם בפוסט ע"י המשתמש, עם סימן ה-# בתחילתו. הביטוי משתמש את אינסטגרם ככלי לחלוקת התוכן של המשתמשים לפי קטגוריות.
                             <br /><br />בהתאם יכולים המשתמשים לבצע חיפוש של תוכן לפי האשטאג מסויים וכך לקבל תכנים שהועלו ע"י משתמשים רבים תחת אותה "קטגוריה".
@@ -156,7 +158,7 @@
 
                     <section class="phraseBox " id="inFilter">
                         <h4>פילטר (Filter)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_filter.png" alt="אייקון של שמש עם קרניים" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_filter.png" alt="שמש עם קרניים" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> פילטר הוא אפקט מובנה לעריכת צבעים ומראה שניתן להוסיף לתמונה או וידאו לפני פרסומם והעלאת כפוסט באינסטגרם.
                         </p>
@@ -164,7 +166,7 @@
 
                     <section class="phraseBox beforeDialog" id="inLike">
                         <h4>לייק (Like)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-heart"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-heart" aria-label="לב"></i></div>
                         <p><span class="boldText">הסבר קצר:</span>כפתור הלייק הוא כפתור שמשמעותו אהבתי, ובהם לכך גם צורתו באינסטגרם היא לב. זוהי הדרך הפשוטה והנפוצה ביותר לתת משוב חיובי על פוסט שהעלה משתמש בפרופיל האישי שלו.</p>
                     </section><!--לייק-->
 
@@ -189,7 +191,7 @@
 
                     <section class="phraseBox" id="inFeed">
                         <h4>פיד (Feed)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_feed.png" alt="אייקון של בית" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/in_feed.png" alt="בית" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>
                             זהו האזור בו מופיעות התמונות האחרונות שהעלו כל המשתמשים שאתם עוקבים אחריהם באופן מרוכז.
@@ -211,7 +213,7 @@
 
                     <section class="phraseBox beforeDialog" id="inTag">
                         <h4>תיוג (Tag)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-at"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-at" aria-label="שטרודל/כרוכית"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>תיוג הוא הדרך של המשתמשים לחבר בין תמונה למשתמש מסויים.תיוג נעשה ע"י צירוף הסימן @ לשם המשתמש.
                             ניתן לתייג משתמש בפוסט חדש, בתגובה או בסטורי. המשתמש שתויג יקבל התראה על כך שתייגו אותו.

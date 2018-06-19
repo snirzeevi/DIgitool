@@ -32,11 +32,13 @@
 </head>
 <body class="innerPage" data-spy="scroll" data-target="#phraseNav" data-offset="220">
     <div id="innerBG"></div>
-    <ul id="skip" class="hidden-xs hidden-sm">
-        <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
-        <li><a title="דלג לתפריט ראשי" href="#mainNav">דלג לתפריט</a></li>
-        <li><a title="דלג לתפריט המושגים" href="#phraseNav">דלג לתפריט המושגים</a></li>
-    </ul>
+    <nav>
+        <ul id="skip" class="hidden-xs hidden-sm">
+            <li><a title="דלג לתוכן" href="#mainContent">דלג לתוכן</a></li>
+            <li><a title="דלג לתפריט ראשי" href="#mainNav">דלג לתפריט</a></li>
+            <li><a title="דלג לתפריט המושגים" href="#phraseNav">דלג לתפריט המושגים</a></li>
+        </ul>
+    </nav>
     <div id="container">
         <header id="innerHeader">
                 <div id="logo" class="col-2">
@@ -95,12 +97,12 @@
                         <li class="nav-item"><a href="#fbLive" class="nav-link">לייב</a></li>
                     </ul>
                 </nav>
-                <div class="col-9 phrasesList">
+                <div class="col-9 phrasesList" role="main">
                     <h2>מילון המונחים של פייסבוק</h2>
                     <div class="dialog col-12">
                         <div id="fb-1st_dialog" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <div class="character-right col-3"><img src="images/dialogs/fb/Dialog1_01.svg" alt="נכדה אומרת" class="kid" /></div>
-                            <p class="right col-9">היי סבתוש, אולי תעשי לי לייק על הפוסט שהעלתי אתמול? את יכולה גם להגיב אם את רוצה.</p>
+                            <p class="right col-9">היי סבתוש, אולי תעשי לי לייק על הפוסט שהעלתי אתמול? את יכולה גם להגיב אם את רוצה</p>
                         </div>
                         <div id="fb-2nd_dialog" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <div class="character-left col-3"><img src="images/dialogs/fb/Dialog1_02.svg" alt="סבתא עונה" class="grandma" /></div>
@@ -113,22 +115,22 @@
                     </div><!--שיחה 1-->
                     <section class="phraseBox" id="fbPost">
                         <h4>פוסט(post)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-edit"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon" ><i class="fas fa-edit" aria-label="עט כותבת על לוח"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> פוסט זה כמו כתבה שמעלים לפייסבוק. הפוסט יכול להכיל טקסט שאותו בן אדם שהעלה את הפוסט כתב,
                             יכול להכיל סרטון, תמונה או מספר תמונות, שיתוף של פוסט אחר.
-                            את הפוסט יכולים לראות החברים שלך, אנשים ספציפיים שהגדרת מראש או כולם
+                            את הפוסט יכולים לראות החברים שלך, אנשים ספציפיים שהגדרת מראש או כולם.
                         </p>
                     </section><!--פוסט-->
 
                     <section class="phraseBox" id="fbLike">
                         <h4>לייק (Like) </h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-thumbs-up"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-thumbs-up" aria-label="אגודל למעלה"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> כפתור הלייק הוא כפתור שאומר אהבתי. זה הוא משוב קצר לפוסט או לתגובה שאהבנו ואנחנו
                             רוצים לתמוך בה. כיום, יש אופציות נוספות ללייק:
                         </p>
-                    <img src="images/fb_like2.png" alt="" />
+                    <img src="images/fb_like2.png" alt="סוגי לייקים שונים" />
                         <p>
                             האופציות הנוספות הן אותו דבר כמו הלייק מבחינת נתינת המשוב, אך לכל
                             אופציה משמעות אחרת, לפי הרגש שהפוסט עורר בנו.
@@ -137,7 +139,7 @@
 
                     <section class="phraseBox beforeDialog" id="fbComment">
                         <h4>תגובה (Comment)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-comment-alt"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-comment-alt" aria-label="בועת מחשבה מרובעת"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> כאשר אתה רוצה לרשום משהו למישהו, בתגובה
                             לפוסט שהוא העלה או תגובה שהוא הגיב. זה הוא משוב ארוך, חיובי או שלילי,
@@ -155,7 +157,7 @@
 
                     <section class="phraseBox" id="fbMessenger">
                         <h4>מסנג'ר (Messenger)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fab fa-facebook-messenger"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fab fa-facebook-messenger" aria-label="ברק בבועת מחשבה"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> מסנגר זה כמו צ'ט, דרך לדבר עם  חברים
                             בזמן אמת או ניתן לשלוח הודעה ואז לאחר זמן מה החבר יגיב, הכל תלוי באם הוא מחובר לפייסבוק,
@@ -166,7 +168,7 @@
 
                     <section class="phraseBox beforeDialog" id="fbNotifications">
                         <h4>התראות (Notifications)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-bell"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-bell" aria-label="פעמון"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> התראות זה כאשר קרה משהו חדש, מאז הפעם האחרונה שביקרת. התראה
                             יכולה להיות קשורה לחברים- בקשת חברות חדשה או חבר אישר את בקשת החברות שלך,
@@ -192,7 +194,7 @@
 
                     <section class="phraseBox" id="fbFriends">
                         <h4>חברים (Friends)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-user-friends"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-user-friends" aria-label="שתי אנשים אחד מאחורי השני"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span> חברים
                             הם אנשים בעלי קיר בפייסבוק, ששלחו לך בקשה חברות ואישרת או שאתה שלחת להם
@@ -208,7 +210,7 @@
 
                     <section class="phraseBox" id="fbFollow">
                         <h4>עקוב (Follow)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-rss"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-rss" aria-label="נקודה מתחת לשתי פסים"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>
                             עקוב זה כאשר אתה רוצה להישאר מעודכן ולקבל התראות מעמוד מסוים או מקיר של מישהו.
@@ -226,7 +228,7 @@
 
                     <section class="phraseBox" id="fbPage">
                         <h4>דף (Page)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_page.png" alt="אייקון עמוד פייסבוק" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_page.png" alt="דגל נטוע" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>דף זה כמו קיר, רק לחברה עסקית או לאישיות מוכרת. לדף יש עוקבים,
                             Followers, שרוצים
@@ -237,11 +239,11 @@
 
                     <section class="phraseBox beforeDialog" id="fbFeed">
                         <h4>פיד (Feed) / ניוז פיד (News Feed)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_feed.png" alt="אייקון ניוז פיד" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_feed.png" alt="עיתון" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>הפיד, או הניוז פיד, זה
                             המקום המרכזי בפייסבוק בו ניתן לראות את כל הפוסטים של החברים שלך, הקבוצות שלך,
-                            הדפים שאחריהם אתה עוקב. הפיד הוא כמו הכותרת של עיתון שישי עם הידיעות הכי חמות
+                            הדפים שאחריהם אתה עוקב. הפיד הוא כמו הכותרת של עיתון שישי עם הידיעות הכי חמות.
                         </p>
                     </section><!--פיד-->
 
@@ -263,7 +265,7 @@
                     </section><!--וול/פרופיל-->
                     <section class="phraseBox" id="fbGroup">
                         <h4>קבוצה (Group)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_group.png" alt="אייקון קבוצת פייסבוק" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_group.png" alt="שלושה אנשים בעיגול" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>קבוצה בפייסבוק זה כמו דף בפייסבוק רק עם חברים במקום עוקבים.  קבוצה בפייסבוק
                             זה סוג של קהילה שמדברת על נושא מסוים ולרוב בעלת דעות דומות לגבי אותו הנושא.
@@ -272,7 +274,7 @@
                     </section><!--קבוצה-->
                     <section class="phraseBox" id="fbShare">
                         <h4>שיתוף (Share)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-share"></i></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><i class="fas fa-share" aria-label="חץ"></i></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>שיתוף
                             היא פעולת הפצה. כאשר אתה רואה פוסט המכיל תוכן שאהבת ואתה מעוניין לתמוך בו, אתה
@@ -281,7 +283,7 @@
                     </section><!--שיתוף-->
                     <section class="phraseBox beforeDialog" id="fbLive">
                         <h4>לייב (Live)</h4>
-                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_live.png" alt="אייקון לייב" /></div>
+                        <p class="boldText">סימן מייצג: </p><div class="phraseIcon"><img src="images/fb_live.png" alt="מצלמת וידאו" /></div>
                         <p>
                             <span class="boldText">הסבר קצר:</span>לייב הם סרטונים
                             שמצלומים בזמן אמת שמעלים לפייסבוק. כאשר חבר או דף בפייסבוק מחליט להעלות סרטון
